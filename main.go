@@ -1,15 +1,13 @@
 //Only name it with main for package would be seat on main executable.
 package main
 
+import "fmt"
+
 func main () {
 
 
-	//Turn card into slice
-	cards := newDeck()
-	//Append
-	cards = append (cards, "Six of Spades")
-
-	cards.print()
+	cards := newDeckFromFile("my_cards")
+	fmt.Println(cards)
 
 
 }
